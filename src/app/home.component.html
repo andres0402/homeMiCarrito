@@ -1,0 +1,89 @@
+<head>
+  <meta charset="utf-8">
+  <title>Gestión de Vehículos y Talleres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/kitcode.js" crossorigin="anonymous"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi carrito</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    <div class="navbar-collapse collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="components/listado-vehiculos">Autos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/listado-repuestos">Repuestos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/eventos">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/servicios">Servicios</a>
+        </li>
+      </ul>
+      <form class="d-flex" id="buscar">
+        <input type="search" placeholder="Search" aria-label="Search" class="form-control me-auto" id="barraBusqueda">
+        <button type="submit" class="btn btn-outline-dark">Search</button>
+      </form>
+    
+      </div>
+    </div>
+  </nav>
+
+  
+  <main>
+    <div class="intro">
+      <h1>Bienvenido a Mi Carrito</h1>
+      <p></p>
+      <div class="opciones">
+        <button id="login"><a type="button" href="/login">Iniciar sesión</a></button>
+        <button id="signup"><a type="button" href="/registro">Registrarse</a></button>
+      </div>
+    </div>
+    <div class="achievements">
+      <a href="/components/listado-vehiculos"><div class="work">
+        <img src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/car-512.png">
+        <p class="work-heading">Autos</p>
+        <p class="work-text">Descubre ofertas de autos nuevos y usados de acuerdo a tus necesidades</p>
+      </div></a>
+      
+      <a href="eventos"><div class="work">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu3b3eJHdG66nMOiM2Sga9tv1wCMGQIl48IWiRyjZ66mGgOE0M">
+        <p class="work-heading">Eventos</p>
+        <p class="work-text">Consulta los próximos eventos automovilísticos en distintas zonas del país</p>
+      </div></a>
+      
+      
+      <a href="/servicios"><div class="work">
+        <img src="https://img.freepik.com/vector-premium/simbolo-soporte-tecnico-herramientas-icono-vector-signo-plano_652240-1991.jpg?w=826">
+        <p class="work-heading">Servicios</p>
+        <p class="work-text">Agenda servicios de peritaje y proyectos de modificación y reparación para tu vehículo</p>
+      </div></a>
+      
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2023 Mi Carrito</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Mas información</span>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Contacto</a>
+      </div>
+      
+    </div>
+  </footer>
+</body>
+

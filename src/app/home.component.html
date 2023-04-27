@@ -8,7 +8,6 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mi carrito</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,14 +20,18 @@
           <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
       </li>
       <li class="nav-item dropdown" ngbDropdown>
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Servicios
         </a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Peritaje</a></li>
-            <li><a class="dropdown-item" href="#">Modificaciones</a></li>
-            <li><a class="dropdown-item" href="#">Talleres</a></li>
+            <li><a class="dropdown-item" href="/components/listado-vehiculos">Vehiculos</a></li>
+            <li><a class="dropdown-item" href="servicios">Peritaje</a></li>
+            <li><a class="dropdown-item" href="/servicios">Modificaciones</a></li>
+            <li><a class="dropdown-item" href="/servicios">Reparaciones</a></li>
+            <li><a class="dropdown-item" href="/eventos">Eventos</a></li>
+            <li><a class="dropdown-item" href="/servicios">Talleres</a></li>
+            
         </ul>
     </li>
       <li class="nav-item">
@@ -39,16 +42,17 @@
           <a class="nav-link">Contactanos</a>
       </li>
       <li>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="logo-redes" src="https://i.imgur.com/B4USPXW.png" alt=""></a>
-          <img class="logo-redes" src="https://i.imgur.com/dxZeFKg.png" alt="">
-          <img class="logo-redes" src="https://i.imgur.com/H8WdcYT.png" alt="">
-          <img class="logo-redes" src="https://i.imgur.com/UANACj3.png" alt="">
+          <a href="https://www.facebook.com"><img class="logo-redes" src="https://i.imgur.com/B4USPXW.png" alt=""></a>
+          <a href="https://www.instagram.com"><img class="logo-redes" src="https://i.imgur.com/dxZeFKg.png" alt=""></a>
+          <a href="https://web.whatsapp.com"><img class="logo-redes" src="https://i.imgur.com/H8WdcYT.png" alt=""></a>
+          <a href="https://www.twitter.com"><img class="logo-redes" src="https://i.imgur.com/UANACj3.png" alt=""></a>
       </li>
       </ul>
-      <form class="d-flex" id="buscar">
-        <input type="search" placeholder="Buscar" aria-label="Buscar" class="form-control me-auto" id="barraBusqueda">
-        <button type="submit" class="btn btn-outline-light" id="btnBuscar">Buscar</button>
-      </form>
+      <div id="btnsNav">
+        <button class="btn btn-outline-dark" id="btnLogin"><a href="/login" id="aLogin">Iniciar sesión</a></button>
+        <button class="btn btn-outline-dark" id="btnSignup"><a href="/registro" id="aSignup">Registrarse</a></button>
+      </div>
+      
     
       </div>
     </div>
@@ -69,25 +73,25 @@
           <div class="carousel-item active">
               <img src="https://a-static.besthdwallpaper.com/bugatti-chiron-hill-drift-wallpaper-3554x1999-53464_53.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h1><b>Resultados con nuestros clientes</b></h1>
-                  <p>Some representative placeholder content for the first slide.</p>
-                  <button type="button" class="btn btn-light">Ver mas</button>
+                  <h1><b>Visita nuestra tienda virtual</b></h1>
+                  <p>Las mejores ofertas de vehiculos nuevos y usados</p>
+                  <button type="button" class="btnIngresar"><a href="/login" id="aLogin">Conoce más</a></button>
               </div>
           </div>
           <div class="carousel-item">
-              <img src="https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?cs=srgb&dl=pexels-abdulwahab-alawadhi-3422964.jpg&fm=jpg" class="d-block w-100" alt="...">
+              <img src="https://i.imgur.com/nMbYhbV.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h1><b>Catalogo de repuestos</b></h1>
-                  <p>Some representative placeholder content for the second slide.</p>
-                  <button type="button" class="btn btn-light">Ver mas</button>
+                  <h1><b>Consulta nuestros servicios</b></h1>
+                  <p>Ofrecemos servicios de peritaje y proyectos de modificaciones para tu vehiculo</p>
+                  <button type="button" class="btnIngresar"><a href="/login" id="aLogin">Conoce más</a></button>
               </div>
           </div>
           <div class="carousel-item">
-              <img src="Imagenes/carro 3.jpg" class="d-block w-100 img-fluid" alt="...">
+              <img src="https://i.imgur.com/WoaTiDm.jpg" class="d-block w-100 img-fluid" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h1><b>¡No te pierdas de las novedades!</b></h1>
-                  <p>Some representative placeholder content for the third slide.</p>
-                  <button type="button" class="btn btn-light">Ver mas</button>
+                  <h1><b>¡No te pierdas de los eventos!</b></h1>
+                  <p>Informate acerca de los próximos eventos automovilísticos en disntitas ciudades</p>
+                  <button type="button" class="btnIngresar"><a href="/login" id="aLogin">Conoce más</a></button>
               </div>
           </div>
       </div>
@@ -128,17 +132,17 @@
               </div></a>
             </div>
             <div class="col-4">
-              <a href="/components/listado-vehiculos"><div class="work">
+              <a href="/servicios"><div class="work">
                 <img src="https://i.imgur.com/x1uzjHl.png">
                 <p class="work-heading">Modificaciones</p>
-                <p class="work-text">Agenda servicios de peritaje y proyectos de modificación y reparación para tu vehículo</p>
+                <p class="work-text">Agenda citas de proyectos de modificación para tu vehículo</p>
               </div></a>
             </div>
             <div class="col-4">
               <a href="/servicios"><div class="work">
                 <img src="https://i.imgur.com/cVUIZjn.png">
                 <p class="work-heading">Servicios</p>
-                <p class="work-text">Agenda servicios de peritaje y proyectos de modificación y reparación para tu vehículo</p>
+                <p class="work-text">Agenda servicios de peritaje y proyectos de reparación para tu vehículo</p>
               </div></a>
             </div>
         </div>
@@ -172,10 +176,10 @@
     <div class="copy">&copy; 2023 Auto-Matic</div>
     
         <div><a style="color: white">Contacto</a></div>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="logo-redes2" src="https://i.imgur.com/B4USPXW.png" alt=""></a>
-          <a href="#"><img class="logo-redes2" src="https://i.imgur.com/dxZeFKg.png" alt=""></a>
-          <a href="#"><img class="logo-redes2" src="https://i.imgur.com/H8WdcYT.png" alt=""></a>
-          <a href="#"><img class="logo-redes2" src="https://i.imgur.com/UANACj3.png" alt=""></a>
+        <a href="https://www.facebook.com"><img class="logo-redes2" src="https://i.imgur.com/B4USPXW.png" alt=""></a>
+          <a href="https://www.instagram.com"><img class="logo-redes2" src="https://i.imgur.com/dxZeFKg.png" alt=""></a>
+          <a href="https://web.whatsapp.com"><img class="logo-redes2" src="https://i.imgur.com/H8WdcYT.png" alt=""></a>
+          <a href="https://www.twitter.com"><img class="logo-redes2" src="https://i.imgur.com/UANACj3.png" alt=""></a>
   
   </footer>
 </body>

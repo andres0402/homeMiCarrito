@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HomeComponent } from './home.component';
 
@@ -11,7 +11,8 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [HomeComponent]
